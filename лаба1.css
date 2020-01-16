@@ -1,0 +1,110 @@
+div[class = box]	{
+width:	500px;	
+height:	200px;
+padding:	15px;
+padding-left:	20px;
+border-left-width:	100px;
+margin-left:	200px;
+background-color: white;
+float: left;
+border: 200px
+}
+.style1 {
+	padding:	20px;
+
+}
+.style2 {
+	padding:	20px;
+
+}
+.style3 {
+	padding:	20px;
+
+}
+.style4 {
+	padding:	20px;
+
+}
+.style5 {
+	padding:	20px;
+
+}
+text {
+	height:	200px;
+}
+button[type="button123"]	{
+	width:	60px;	
+	height:	20px;
+	background-color:blue;
+	
+
+}
+button[type="button1"] {
+	
+	width:	20px;	
+	height:	20px;
+	background-color:red;
+
+
+}
+button[type="button2"]	{
+	width:	20px;	
+	height:	20px;
+	background-color:green;
+
+}
+
+button[type="buttonKup"]	{
+	width:	80px;	
+	height:	20px;
+	background-color:gray;
+}
+
+button[type="buttonKrest"] {
+	
+	width:	20px;	
+	height:	20px;
+	background-color:red;
+
+}
+
+body {
+background-color:#C0C0C0
+}
+
+div[class = box1]	{
+	
+width:	300px;	
+height:	140px;
+padding:	15px;
+background-color: white;
+border-left-width:	100px;
+float: center-right;
+margin-left:800px;
+
+}
+
+div[class = box2]	{
+	
+width:	300px;	
+height:	120px;
+padding:	15px;
+background-color: white;
+border-left-width:	100px;
+float: center-right;
+margin-left:800px;
+margin-top:16px;
+
+}
+
+div[class = text]	{
+background-color:	gray;
+width:	75px;
+height:	20px;}
+
+div[class = text1]	{
+background-color:	orange;
+width:	20px;
+height:	20px;
+}
+
