@@ -1,0 +1,365 @@
+.body {
+    border-radius: 50px;
+}
+
+div[class = box]	{
+width:	35%;	
+height:	auto;
+padding:	1%;
+padding-left:	3%;
+margin-left:	13%;
+background-color: white;
+float: left;
+
+}
+.left{
+    width :40%;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+.right{
+    margin: 10px;
+}
+.middle{
+    margin: 10px;
+    
+}
+body div{
+    display: inline-table;
+}
+.boxes1 {
+padding:	3%;
+background-color: azure;
+height: 4%;
+    width: 80%;
+    border-bottom-style: solid;
+border-bottom-color: black;
+border-bottom-width: thin;
+
+
+}
+
+.style1{
+position: relative;
+    width: 29%;
+    
+}
+
+.style9 div{
+     margin: 20px;
+}
+.style9{
+    font-size: 20;
+}
+
+.style111{
+    font-size: 20;
+}
+.style111 div{
+     margin: 20px;
+}
+
+
+
+.style111{
+    font-size: 20;
+}
+.style111 div{
+     margin: 20px;
+}
+
+
+
+.style2 {
+padding:	3%;
+background-color: azure;
+    height: 4%;
+width: 30%;
+    margin-top: 1%;
+margin-left: 15%
+}
+.style3 {
+padding:	3%;
+background-color: azure;
+    height: 4%;
+width: 30%;
+    margin-top: 1%;
+
+}
+.style4 {
+padding:	3%;
+background-color: azure;
+    height: 4%;
+width: 30%;
+    margin-top: 1%;
+
+}
+.style5 {
+padding:	3%;
+background-color: azure;
+    height: 4%;
+width: 30%;
+    margin-top: 1%;
+
+}
+
+.style10
+text {
+	height:	20%;
+}
+button[type="button123"]	{
+	width:	30%;	
+	height:	90%;
+	background-color:blue;
+	
+
+}
+button[type="button1"] {
+	
+	color: white;
+    
+    border: none;
+    border-radius: 50px;
+    
+background-color:red;
+}
+
+.buy{
+    margin-left: 30%;
+     border: none;
+    border-radius: 50px;
+}
+.text{
+     border: none;
+    border-radius: 50px;
+}
+.text1{
+     border: none;
+    border-radius: 50px;
+}
+.text_{
+     border: none;
+    border-radius: 50px;
+    text-decoration:line-through;
+}
+.text1_{
+     border: none;
+    border-radius: 50px;
+    text-decoration:line-through;
+}
+button[type="button2"]	{
+	
+	margin-left: 5%;
+     border: none;
+   border-radius: 50px;
+background-color: green;
+
+}
+
+.output{
+    margin-left: 5%;
+     border: none;
+}
+
+button[type="buttonKup"]	{
+	width:	25%;	
+	margin-left: 5%;
+    border: none;
+    border-radius: 50px;
+	background-color:gray;
+   position: relative;
+}
+
+button[type="buttonKrest"] {
+	
+	width:	5%;	
+	margin-left: 5%;
+	background-color:red;
+
+}
+
+
+
+body {
+background-color:#C0C0C0
+}
+
+div[class = box1]	{
+	
+width:	20%;	
+height:	18%;
+    margin-right: 10%;
+padding:	1%;
+background-color: white;
+float: center-right;
+
+
+
+
+
+}
+
+div[class = box2]	{
+	
+width:	20%;	
+height:	18%;
+padding:	1%;
+background-color: white;
+float: center-right;
+margin-left:53%;
+margin-top:1%;
+
+}
+
+div[class = text]	{
+background-color:	gray;
+width:	30%;
+height:	15%;}
+
+div[class = text1]	{
+background-color:	orange;
+width:	7%;
+height: 15%;
+}
+
+div[class = text_]	{
+background-color:	gray;
+width:	30%;
+height:	15%;}
+
+div[class = text1_]	{
+background-color:	orange;
+width:	7%;
+height: 15%;
+}
+
+.text2	{
+left: 15%; bottom: -9.5%; /* Левый нижний угол */
+padding: 0.8%; /* Поля вокруг текста */
+background: #9400D3; /* Цвет фона */
+color: #fff; /* Цвет текста */
+width: 10%;
+font-size: 150%;
+position: fixed;
+height: 15%;
+border-top-left-radius: 30px;
+text-align: center;
+border-top-right-radius: 30px;
+}
+
+.text3	{
+	font-size: 70%;
+	height: 15%;
+
+}
+
+.text2:hover {
+	transform: translateY(-37%);
+	transition-duration: 1s;
+	background-color: #FF0000;
+}
+
+.textPrint{
+	visibility:hidden;
+	left: 15%; bottom: -12.5%; /* Левый нижний угол */
+padding: 10px; /* Поля вокруг текста */
+border-style: solid;
+border-color: violet;
+background: #9400D3; /* Цвет фона */
+color: #fff; /* Цвет текста */
+width: 10%;
+font-size: 150%;
+position: fixed;
+height: 15%;
+border-top-left-radius: 30px;
+text-align: center;
+border-top-right-radius: 30px;
+}
+
+
+
+.in{
+    height: 90%;
+    width: 20%;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+
+@media print{
+	.text2{
+		visibility:hidden;
+	}
+	.textPrint{
+		visibility:visible;
+	}
+	}
+
+
+ 
+
+[data-tooltip] {
+   position:relative;
+}
+
+[data-tooltip]::after {
+	content: attr(data-tooltip);
+    width: auto;
+    position: absolute;
+    background-color: darkblue;
+    opacity: 0;
+    color: white;
+    border-radius: 4px;
+    font-size: 80%;
+}
+
+[data-tooltip]:hover::after{
+    opacity: 1;
+    transform: translateY(-270%);
+    transition-duration: 1s;
+}
+
+div[class = boxJs]{
+    width:	39%;	
+height:	47%;
+padding:	7%;
+padding-left:	5%;
+margin-left:	30%;
+background-color: green;
+float: left;
+}
+
+.container {
+  border: 1px solid black;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+}
+
+.element {
+  border: 1px solid black;
+  width: 60px;
+  height: 60px;
+  background: lightgreen;
+  display: inline-block;
+  margin: 5px;
+}
+
+.Naming{
+    position: relative;
+    width: 60%;
+}
+
+.sub{
+    height: 150%;
+}
+
+.timeClick{
+    position: relative;
+    width: 5%;
+}
+.minus{
+    position: relative;
+    width: 5%;
+}
+
