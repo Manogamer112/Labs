@@ -1,0 +1,89 @@
+<%
+
+function getIngredientsArray(pizza) {
+    //Отримує вміст піци
+    var content = pizza.content;
+    var result = [];
+
+    //Object.keys повертає масив ключів в об’єкті JavaScript
+
+    Object.keys(content).forEach(function(key){
+
+        //a.concat(b) створює спільний масив із масивів a та b
+        result = result.concat(content[key]);
+    });
+
+    return result;
+}
+
+   %>
+
+
+<div class="col-sm-5 col-md-4  blocck" id="item">
+    <% if(pizza.is_new) { %>
+    <div class="badge badge-danger badge">Нова</div>
+    <% } else if(pizza.is_popular) {%>
+    <div class="badge badge-success badge">Популярна</div>
+    <% } %>
+    <div class="thumbnail pizza-card card">
+        <img src="www/<%= pizza.icon %>">
+
+        <div icon class="caption">
+            <h3><%= pizza.title %></h3>
+
+            <p class="b"><%= pizza.type %></p>
+            <p class="c"><%= getIngredientsArray(pizza).join(", ") %> </p>
+
+            <div class="row">
+
+                <% if(pizza.small_size) { %>
+                <div class="left-box col-md-6">
+                    <div class="row">
+                        <img class="kryg3" src="www/assets/images/size-icon.svg">
+                        <div class="kryg4"> <%= pizza.small_size.size %> </div>
+                    </div>
+                    <div class="row">
+                        <img class="kryg3" src="www/assets/images/weight.svg">
+                        <div class="kryg4"> <%= pizza.small_size.weight %> </div>
+                    </div>
+                </div>
+                <% } if(pizza.big_size) {%>
+                <div class="right-box col-md-6">
+                    <div class="row">
+                        <img class="kryg5" src="www/assets/images/size-icon.svg">
+                        <div class="kryg4"> <%= pizza.big_size.size %> </div>
+                    </div>
+                    <div class="row">
+                        <img class="kryg6" src="www/assets/images/weight.svg">
+                        <div class="kryg4"> <%= pizza.big_size.weight %> </div>
+                    </div>
+
+                </div>
+                <% } %>
+            </div>
+
+            <p class="a">
+                <% if(pizza.small_size) { %>
+                <a class="sek1"><%= pizza.small_size.price %></a>
+                <% } if(pizza.big_size) {%>
+                <a class="sek1"><%= pizza.big_size.price %></a>
+                <% } %>
+            </p>
+
+            <p>
+                <% if(pizza.small_size) { %>
+                <a class="sek">грн</a>
+                <% } if(pizza.big_size) {%>
+                <a class="sek">грн</a>
+                <% } %>
+            </p>
+            <p>
+                <% if(pizza.small_size) { %>
+                <a class="btn btn-default buy-small">Купити</a>
+                <% } if(pizza.big_size) {%>
+                <a class="btn btn-default buy-big">Купити</a>
+                <% } %>
+            </p>
+        </div>
+    </div>
+</div>

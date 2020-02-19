@@ -1,0 +1,34 @@
+<div class="row raz3 border-right">
+
+    <div class="col-9">
+        <div class="name-right-proto font-weight-bold bbq">
+            <%= pizza.title %> (<%= size == "big_size" ? "Велика" : "Мала" %>)
+        </div>
+
+        <div class="row kryg ">
+            <img class="kryg2" src="www/assets/images/size-icon.svg">
+            <div class="kryg1"> <%= pizza[size].size %> </div>
+            <img class="kryg1" src="www/assets/images/weight.svg">
+            <div class="kryg1"> <%= pizza[size].weight %> </div>
+        </div>
+
+        <div class="row right-proto-block">
+
+            <div class="price"><%= pizza[size].price %> грн</div>
+            <button type="button" class="btn btn-default btn-number button-plus " data-type="plus">
+                +
+            </button>
+            <div class="right-proto-number"><%= quantity %></div>
+            <button type="button" class="btn btn-default btn-number button-minus " data-type="minus">
+                -
+            </button>
+            <button type="button" class="btn btn-default btn-number button-krest ">
+                X
+            </button>
+        </div>
+    </div>
+    <div class="col-3">
+        <img class="photo1" src="www/<%= pizza.icon %>">
+    </div>
+
+</div>
